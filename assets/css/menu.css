@@ -1,0 +1,125 @@
+/*------------------------*/
+/*----- Desktop Menu -----*/
+/*------------------------*/
+#navbar {
+   display: grid;
+   min-height: 80px;
+   grid-auto-flow: column;
+   background-color: var(--color-black);
+   grid-gap: 1.5em;
+   padding: 0 2rem;
+}
+#logo {
+   display: grid;
+   justify-content: start;
+   align-content: center;
+   grid-auto-flow: column;
+}
+.logo__icon {
+   margin: auto 0.5rem auto;
+}
+.logo__icon img {
+   width: 50px;
+}
+.logo__text {
+   font-family: var(--font-family);
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: var(--color-white);
+   text-transform: uppercase;
+}
+.logo__text span {
+   color: var(--color-4);
+}
+#links {
+   display: grid;
+   justify-content: right;
+   align-content: center;
+   grid-auto-flow: column;
+   grid-gap: 1.5em;
+   font-family: var(--font-family);
+}
+#links a {
+   text-decoration: none;
+   color: var(--color-white);
+}
+#links a:hover {
+   color: var(--color-4);
+}
+#links a i {
+   margin-right: 0.5rem;
+   color: var(--color-4);
+}
+/*------------------------*/
+/*----- Mobile Menu -----*/
+/*------------------------*/
+.mobile-menu {
+   display: block;
+   list-style-type: none;
+   width: 100%;
+   padding: 0;
+   z-index: 100;
+   text-align: center;
+}
+.mobile-links {
+   padding: 0;
+}
+.mobile-links li {
+   padding: 0;
+   line-height: 2.8rem;
+   background-color: var(--color-4);
+   border-bottom: 2px solid var(--color-black);
+}
+.mobile-links li:hover {
+   background-color: var(--color-2);
+}
+.mobile-links li a {
+   display: block;
+   text-decoration: none;
+   color: var(--color-black);
+}
+.mobile-links li a:hover {
+   color: var(--color-white);
+}
+.mobile-links li a i {
+   margin-right: 0.5rem;
+}
+.mobile-btn {
+   display: grid;
+   justify-content: right;
+   align-content: center;
+   grid-auto-flow: column;
+   cursor: pointer;
+}
+.nav-list {
+   font-family: var(--font-family);
+   list-style-type: none;
+}
+.nav-list:hover {
+   opacity: 0.5;
+   cursor: pointer;
+}
+/*------------------------*/
+/*----- Media Query -----*/
+/*------------------------*/
+/*-----Mobile to Tablet-----*/
+@media (min-width: 320px) and (max-width: 767px) {
+   #links,
+   .mobile-menu {
+      display: none;
+   }
+   .logo__icon img {
+      width: 30px;
+   }
+   .logo__text {
+      font-size: 1rem;
+   }
+}
+/*-----Tablet to Desktop-----*/
+@media (min-width: 768px) {
+   .mobile-menu,
+   .mobile-btn,
+   .fa-bars {
+      display: none;
+   }
+}

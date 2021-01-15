@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Picture in Picture</title>
+      <!-- Icons -->
+      <!--<link
+         rel="icon"
+         type="image/png"
+         href="https://www.google.com/s2/favicons?domain=css-tricks.com"
+      />-->
+      <link rel="icon" type="image/png" href="./assets/ico/neva-logo.ico" />
+      <!-- Library -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+         crossorigin="anonymous"
+      />
+      <!-- Fonts -->
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto" />
+      <!-- Css -->
+      <link rel="stylesheet" href="./assets/css/style.css" />
+      <link rel="stylesheet" href="./assets/css/menu.css" />
+      <link rel="stylesheet" href="./assets/css/footer.css" />
+      <!-- Scripts -->
+      <script src="./assets/js/script.js" defer></script>
+      <script src="./assets/js/menu.js" defer></script>
+   </head>
+   <body>
+      <header id="header">
+         <!-- Desktop Menu -->
+         <nav id="navbar">
+            <div id="logo">
+               <div class="logo__icon">
+                  <img src="./assets/ico/neva-logo.ico" alt="Code Neva Logo" />
+               </div>
+               <div class="logo__text">
+                  <h2>Code <span>Neva</span></h2>
+               </div>
+            </div>
+            <div id="links">
+               <a href="https://github.com/nodbos">
+                  <i class="fab fa-github-square"></i>
+                  Github
+               </a>
+               <a href="https://www.linkedin.com/in/felipe-aven/">
+                  <i class="fab fa-linkedin"></i>
+                  LinkedIn
+               </a>
+               <!--<a href="#">
+                  <i class="fas fa-phone-square-alt"></i>
+                  Contact
+               </a>-->
+            </div>
+            <!-- Mobile Button -->
+            <div class="mobile-btn">
+               <a id="menu-btn" onclick="mobileToggle()" class="fa fa-bars fa-2x"></a>
+            </div>
+         </nav>
+         <!-- Mobile Menu -->
+         <div id="mobile-menu" class="mobile-menu">
+            <ul class="mobile-links">
+               <li class="nav-list">
+                  <a href="https://github.com/nodbos">
+                     <i class="fab fa-github-square"></i>
+                     Github
+                  </a>
+               </li>
+               <li class="nav-list">
+                  <a href="https://www.linkedin.com/in/felipe-aven/">
+                     <i class="fab fa-linkedin"></i>
+                     LinkedIn
+                  </a>
+               </li>
+               <!--<li class="nav-list">
+                  <a href="#">
+                     <i class="fas fa-phone-square-alt"></i>
+                     Contact
+                  </a>
+               </li>-->
+            </ul>
+         </div>
+      </header>
+      <main id="main">
+         <h1>Picture in Picture</h1>
+         <p>
+            This project allows you to stream your screen to a Picture in Picture window <br />
+            Just select the screen and press start
+         </p>
+         <section class="section">
+            <!--Video-->
+            <video id="video" controls height="360" width="640" hidden></video>
+            <!--Button-->
+            <div class="button-container">
+               <button id="button">START</button>
+            </div>
+         </section>
+      </main>
+      <footer id="footer" class="wrapper">
+         <p>
+            Made by
+            <span> Felipe </span>
+            in
+            <img
+               class="emoji"
+               src="https://twemoji.maxcdn.com/v/13.0.1/72x72/1f1e8-1f1f4.png"
+               alt="Colombian Flag"
+               width="20"
+               height="20"
+            />
+         </p>
+      </footer>
+   </body>
+</html>

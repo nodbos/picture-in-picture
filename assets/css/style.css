@@ -1,0 +1,60 @@
+:root {
+   --color-black: #121212;
+   --color-white: #f0f0f0;
+   --color-1: #0477bf;
+   --color-2: #049dd9;
+   --color-3: #04b2d9;
+   --color-4: #5ed7f2;
+   --color-5: #f2bb13;
+   --font-family: 'Roboto', sans-serif;
+   --button-transition: all 0.5s ease;
+   --shadow: 0.3rem 0.3rem 1rem 0 rgba(18, 18, 18, 0.2);
+   --shadow-hover: 0.3rem 0.3rem 1rem 0 rgba(18, 18, 18, 0.3);
+   --shadow-button: 0 0.3rem rgba(18, 18, 18, 0.2);
+   --shadow-button-hover: 0 0.3rem rgba(18, 18, 18, 0);
+   --shadow-button--inset: inset 0 0.3rem rgba(18, 18, 18, 0.2);
+   --shadow-button--inset-hover: inset 0 0.3rem rgba(18, 18, 18, 0);
+}
+/*-------------------*/
+/*----- General -----*/
+/*-------------------*/
+html {
+   box-sizing: border-box;
+}
+body {
+   margin: 0;
+   min-height: 100vh;
+   background-color: var(--color-black);
+   font-family: var(--font-family);
+   color: var(--color-white);
+}
+#main {
+   text-align: center;
+   padding-top: 10%;
+   padding: 6rem 2rem 0;
+}
+.button-container {
+   border: var(--border);
+   padding: 1rem;
+   border-radius: 0.7rem;
+   box-shadow: var(--shadow--inset);
+}
+button {
+   cursor: pointer;
+   outline: none;
+   width: 9rem;
+   height: 5rem;
+   font-family: var(--font-family);
+   font-size: 2rem;
+   color: var(--color-white);
+   text-shadow: var(--shadow-button);
+   background: linear-gradient(to top, var(--color-2), var(--color-1));
+   border-radius: 0.7rem;
+}
+button:hover {
+   background: linear-gradient(to bottom, var(--color-2), var(--color-1));
+}
+button:active {
+   transform: translateY(3px);
+   box-shadow: 0 0.6rem 0.6rem 0 rgba(0, 0, 0, 0.3);
+}
